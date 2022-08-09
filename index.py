@@ -7,5 +7,4 @@ for i in range(100):
     time.sleep(0.01)
 
 my_bar.empty()  # Remove the progress bar
-st.write("Done!")
 st.success('hello welcome to arrayweb')
