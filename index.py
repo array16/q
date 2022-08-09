@@ -2,8 +2,10 @@ import streamlit as st
 import time
 
 my_bar = st.progress(0)
+for i in range(100):
+    my_bar.progress(i + 1)
+    time.sleep(0.01)
 
-for percent_complete in range(100):
-     time.sleep(0.1)
-     my_bar.progress(percent_complete + 1)
+my_bar.empty()  # Remove the progress bar
+st.write("Done!")
 st.success('hello welcome to arrayweb')
